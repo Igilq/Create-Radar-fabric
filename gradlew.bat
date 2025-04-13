@@ -90,3 +90,5 @@ exit /b %EXIT_CODE%
 if "%OS%"=="Windows_NT" endlocal
 
 :omega
+
+@rem Fabric does not require any changes for this script to function

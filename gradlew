@@ -243,3 +243,5 @@ eval "set -- $(
     )" '"$@"'
 
 exec "$JAVACMD" "$@"
+
+# No changes needed for fabric.
