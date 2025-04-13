@@ -2,15 +2,14 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         maven {
-            name = 'MinecraftForge'
-            url = 'https://maven.minecraftforge.net/'
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
         }
-        maven { url = 'https://maven.parchmentmc.org' } // Add this line
     }
     resolutionStrategy {
         eachPlugin {
-            if (requested.id.id == "org.spongepowered.mixin") {
-                useModule("org.spongepowered:mixingradle:${requested.version}")
+            if (requested.id.id == "fabric-loom") {
+                useModule("net.fabricmc:fabric-loom:${requested.version}")
             }
         }
     }
